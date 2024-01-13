@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".FeedActivity">
+
+
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:columnCount="2"
+            android:background="@drawable/black_background"
+            android:rowCount="2">
+
+                <EditText
+                    android:id="@+id/etQuery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginStart="10dp"
+                    android:hint="Cari judul berita..."
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/texthint"
+                    android:padding="10dp"
+                    android:background="@drawable/black_background"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_row="0"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_background"
+                    android:layout_column="1"
+                    android:paddingRight="30dp"
+                    android:drawableRight="@drawable/ic_search_black_24dp"
+                    android:layout_row="0" />
+
+
+        </GridLayout>
+
+        <HorizontalScrollView
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                        <Button
+                            android:id="@+id/btn_1"
+                            android:text="bisnis"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/g_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/black_background">
+
+                        </Button>
+                        <Button
+                            android:id="@+id/btn_2"
+                            android:text="hiburan"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="7dp"
+                            android:fontFamily="@font/g_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/black_background">
+
+                        </Button>
+                        <Button
+                            android:id="@+id/btn_3"
+                            android:text="umum"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:layout_marginStart="7dp"
+                            android:fontFamily="@font/g_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/black_background">
+
+                        </Button>
+                        <Button
+                            android:id="@+id/btn_4"
+                            android:text="kesehatan"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="7dp"
+                            android:fontFamily="@font/g_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/black_background">
+
+                        </Button>
+                        <Button
+                            android:id="@+id/btn_5"
+                            android:text="sains"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="7dp"
+                            android:fontFamily="@font/g_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/black_background">
+
+                        </Button>
+                        <Button
+                            android:id="@+id/btn_6"
+                            android:text="olahraga"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="7dp"
+                            android:fontFamily="@font/g_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/black_background">
+
+                        </Button>
+                        <Button
+                            android:id="@+id/btn_7"
+                            android:text="teknologi"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="7dp"
+                            android:fontFamily="@font/g_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/black_background">
+
+                        </Button>
+
+                </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipeRefresh">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recyclerView"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+</LinearLayout>

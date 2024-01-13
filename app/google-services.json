@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "705638932074",
+    "project_id": "pikiran-rakyat-17d2d",
+    "storage_bucket": "pikiran-rakyat-17d2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705638932074:android:780f6f478fe0a408bc3413",
+        "android_client_info": {
+          "package_name": "com.bpr.pikiranrakyat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdBSpVJTrdyHI0LZ9TwLvFfUkMxD1xHck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
